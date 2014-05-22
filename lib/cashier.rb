@@ -12,7 +12,7 @@ module Cashier
     #   # => true
     #
     def perform_caching?
-      ::ApplicationController.perform_caching
+      true
     end
 
     # Public: store a fragment with an array of tags for this fragment.
@@ -165,8 +165,8 @@ module Cashier
   end
 end
 
-require 'rails'
-require 'cashier/railtie'
+# require 'rails'
+# require 'cashier/railtie'
 require 'cashier/adapters/cache_store'
 require 'cashier/adapters/redis_store'
 
